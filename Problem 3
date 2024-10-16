@@ -1,0 +1,21 @@
+determe the number of ways to paint elements of an array such that the GCD (Greatest Common Divisor) of black-painted elements is equal to the GCD of white-painted elements. 
+
+Problem Explanation Input: An array 𝐴 A of integers of length 𝑁 . 
+Each element in the array can be painted either black, white, or left unpainted.
+Valid Painting: A painting is considered valid if at least one element is painted black and at least one element is painted white.
+Goal: Find the number of valid ways to paint the array such that the GCD of the black-painted elements equals the GCD of the white-painted elements.
+Output: Since the result could be large, return the answer modulo 1 0 9 + 7 .
+
+
+Example 1:
+
+𝐴 = [ 11 , 11 ] Possible painting combinations where one element is painted black and the other white: First element white, second element black.
+First element black, second element white. In both cases, the GCD of painted elements is 11. 
+
+Output: 2
+
+Example 2:
+
+𝐴 = [ 2 , 6 , 2 ]  
+
+Possible valid combinations with different colors and equal GCDs can be found. Output: 6
