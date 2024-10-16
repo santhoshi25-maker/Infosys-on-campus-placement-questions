@@ -1,0 +1,21 @@
+You are given: A tree with  N nodes. An array  A[] where  A[i] represents the value of node  i. An array  P[] where P[i] represents the parent of node i. 
+The task is to find the sum of the minimum number of covered ranges in each connected component after deleting node x from the tree, for all  x from  0 to  N.
+
+
+Example Cases: 
+
+
+Case 1: Input: 𝑁 = 1 , 𝑃 = [ 0 ] , 𝐴 = [ 1 ] 
+
+Explanation: After removing the only node, the component is empty. Hence, the answer is  0.
+
+
+Case 2: Input: 𝑁 = 2 , 𝑃 = [ 0 , 1 ] , 𝐴 = [ 1 , 2 ] 
+
+Explanation: For each node (1, 2), removing the node will result in a single connected component containing one node. Therefore, the total sum is 1 + 1 = 2 .
+
+
+Case 3: Input: 𝑁 = 3 , 𝑃 = [ 0 , 1 , 1 ], 𝐴 = [ 1 , 2 , 3 ]
+
+Explanation: Removing each node  x gives the following connected component sizes: Removing node 1 results in components of sizes 2 and 1. Removing node 2 results in components of size 1.
+Removing node 3 results in components of size 1. The sum is 2 + 2 + 1 = 5 .
